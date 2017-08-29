@@ -2,7 +2,7 @@
 
 This is a simple template to help others setup a project environment when working with [usp files](https://github.com/stefanocasazza/ULib/wiki/ULib-Servlet-Pages). 
 
-The included makefile keeps will call usp_compile on usp files and synchronises files in the src directory and docroot folders, It doesn't add any functionality to ULib/Userver.  
+The included makefile will call usp_compile on usp files and synchronises files in the src directory and docroot folders, It doesn't add any functionality to ULib/Userver.  
 
 Most IDEs have the ability to work with makefile projects and therefore this is a convenient way to integrate the usp workflow into your IDE of choice.
 
