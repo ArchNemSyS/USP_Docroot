@@ -2,6 +2,7 @@
 .SUFFIXES: 
 .SUFFIXES: .usp .htt
 
+PREFIX = /usr/local
 PROJDIR := $(realpath $(CURDIR))
 SOURCEDIR := $(PROJDIR)/src
 INCLUDE_DIR = $(PROJDIR)/include
@@ -51,3 +52,9 @@ $(1)%.html: %.htt
 	gpp -I${INCLUDE_DIR} -C $$< -o $$@
 endef
 $(foreach targetdir, $(HTT_TARGET_DIRS), $(eval $(call generateRules_html, $(targetdir))))
+
+
+.PHONY: clean
+
+clean:
+	rm -Rf $(BUILDDIR)
