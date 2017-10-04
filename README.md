@@ -6,6 +6,8 @@ The included makefile will call usp_compile on usp files and synchronises files 
 
 Most IDEs have the ability to work with makefile projects and therefore this is a convenient way to integrate the usp workflow into your IDE of choice.
 
+Please note make doesn't support spaces in path/filenames and at present this build system ignores dependence's, ie if you change a header the sources that use it will not be flagged for a rebuild by make. 
+
 # Setup
 Firstly download and install [ULib/UServer](https://github.com/stefanocasazza/ULib/wiki/Getting-Started-With-ULib)
 you can skip the configuration steps and use (tweak) the configuration included in the template.
